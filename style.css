@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    color:gray;
+}
+
+
+nav {
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+li:hover {
+    color: white; 
+}
+
+
+.Searchbar {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.Searchbar input {
+    width: 60%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.Product {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.one {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.one:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.one img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.About {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e8e8e8;
+}
+
+.Contact {
+    background-color:black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: burlywood;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .Searchbar input {
+        width: 90%;
+    }
+
+    .Product {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
